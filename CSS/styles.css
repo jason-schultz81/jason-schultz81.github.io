@@ -1,3 +1,7 @@
+* {
+    border: 1px solid red;
+}
+
 header {
     display: block;
     border-bottom: 2px solid blue;
@@ -49,7 +53,6 @@ footer {
 
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
