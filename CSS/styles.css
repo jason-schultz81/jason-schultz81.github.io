@@ -13,6 +13,7 @@ main {
 footer {
     bottom: 3px;
     text-align: center;
+    margin-top: 25px;
 }
 
 .top-corner {
