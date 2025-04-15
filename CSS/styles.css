@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    margin: 1px solid red;
 }
 
 header {
@@ -15,24 +15,25 @@ main {
 }
 
 footer {
-    bottom: 3px;
+    margin-bottom: 10px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 100px;
 }
 
 .top-corner {
     position: absolute;
-    top: 27.5px;
+    top: 30px;
     right: 10px;
     text-align: right;
 }
 
 .featured-work {
     text-align: center;
+    margin-top: 20px;
 }
 
 .left {
-    float: left; 
+    float: left;
     margin-right: 50px;
 }
 
@@ -60,8 +61,8 @@ footer {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 12px;
     z-index: 1;
 }
 
@@ -75,6 +76,7 @@ footer {
     width: 8%;
     height: auto;
     justify-content: left;
+    top: 5px;
 }
 
 #center-picture {
@@ -85,5 +87,10 @@ footer {
 
 #additional-info {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#info-heading {
+    margin-top: 20px;
 }
