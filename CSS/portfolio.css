@@ -1,6 +1,8 @@
+/* 
 * {
-    margin: 1px solid red;
-}
+    border: 1px solid red;
+} 
+*/
 
 header {
     display: block;
@@ -53,21 +55,7 @@ footer {
 }
 
 .dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 12px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+    
 }
 
 #headshot {
@@ -93,4 +81,18 @@ footer {
 
 #info-heading {
     margin-top: 20px;
+}
+
+#dropdownBox {
+    position: fixed; /* Or sticky for scrolling behavior */
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+#dropdownBox.show {
+    display: block; /* Show the dropdown */
 }
