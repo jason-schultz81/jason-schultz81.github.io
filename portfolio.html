@@ -31,27 +31,13 @@
       <h1>Featured Work</h1>
       <div id="additional-info">
         <div id="about" class="info left">
-          <img src="glowing-cpu.JPG" class="info-image">
-          <div>
-            <span>
-              <h3 id="info-heading"><a id="triggerLink" href="#">About</a></h3>
-            </span>
-            <div id="dropdownBox" class="dropdown">
-              <p>My name is Jason Schultz and I am an entry-level IT professional.</p>
-            </div>
-          </div>
+          <img src="glowing-cpu.JPG" class="info-image" alt="about" data-toggle="modal" data-target=".about-modal">
+          <h3 id="info-heading"><a>About</a></h3>
         </div>
         <div id="project-1" class="info right">
-          <img src="glowing-cpu.JPG" class="info-image">
-          <div>
-            <span>
-              <h3 id="info-heading">Project 1</h3>
-            </span>
-            <p><a id="triggerLink" href="#">Portfolio Website</a></p>
-            <div id="dropdownBox2" class="dropdown">
-              <p>This is my project.</p>
-            </div>
-          </div>
+          <img src="glowing-cpu.JPG" class="info-image" alt="portfolio" data-toggle="modal" data-target=".portfolio-modal">
+          <h3 id="info-heading" class="text-uppercase">Project 1</h3>
+          <p><a href="https://github.com/jason-schultz81/Personal_Portfolio_Website.git">Portfolio Website</a></p>
         </div>
       </div>
     </section>
@@ -59,6 +45,50 @@
   <footer>
     <a href="https://www.linkedin.com/in/jasonanthonyschultz/">Made by Jason A. Schultz</a>
   </footer>
+  <!--About Modal-->
+  <div class="modal fade about-modal" tabindex="-1" role="dialog" aria-labelledby="aboutModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="about">About</h4>
+        </div> <!--modal header-->
+        <div class="modal-body">
+          <p>
+            Hi, my name is Jason Schultz. I am an entry-level IT professional.
+          </p>
+          <p>
+            If you want to contact me, you can <a href="mailto:jason.a.schultz81@gmail.com">Email me</a>
+          </p>
+        </div><!--modal body-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div><!--modal footer-->
+      </div><!--modal content-->
+    </div><!--modal dialog-->
+  </div>
+
+  <!--Project One Modal-->
+  <div class="modal fade project_one-modal" tabindex="-1" role ="dialog" aria-labelledby = "projectOneModal" aria-hidden = "true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class = "modal-title" id = "projectOne">Portfolio Website</h4>
+        </div> <!--modal header-->
+        <div>
+          <p>
+            I did this project.
+          </p>
+          <p>
+            This is how it turned out.
+          </p>
+        </div> <!--modal body-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div><!--modal footer-->
+      </div><!--modal content-->
+    </div><!--modal dialog-->
+  </div><!--modal fade-->
+
   <script src="JavaScript/portfolio.js"></script>
 </body>
 
