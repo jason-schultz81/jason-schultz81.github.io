@@ -1,80 +1,95 @@
-/* 
- * {
-    border: 1px solid red;
-}
-    */
-
 header {
-    display: block;
+    display: flex;
+    align-items: center;
     border-bottom: 2px solid blue;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
+    height: 100px;
+  }
 
 main {
     background-image: linear-gradient(to bottom, blue, white);
     position: relative;
-}
+    margin-top: 120px;
+  }
 
 footer {
     margin-bottom: 10px;
     text-align: center;
     margin-top: 100px;
-}
+  }
 
 .top-corner {
     position: absolute;
     top: 30px;
     right: 10px;
     text-align: right;
-}
+  }
 
 .featured-work {
     text-align: center;
     margin-top: 20px;
-}
-
-.left {
-    float: left;
-    margin-right: 50px;
-}
-
-.right {
-    float: right;
-    margin-left: 50px;
-}
+  }
 
 .info {
     text-align: center;
-}
+  }
+
+.info-heading {
+    margin-top: 20px;
+  }
 
 .info-image {
-    height: 300px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;      
+    aspect-ratio: 1 / 1;  
+    object-fit: cover;     
     border-radius: 50%;
-}
-
-#headshot {
+    display: block;
+    margin: 0 auto;
+  }
+  
+#section-1 {
     display: flex;
-    align-items: center;
-    width: 8%;
-    height: auto;
-    justify-content: left;
-    top: 5px;
-}
+  }
 
+  #headshot {
+    width: 30vw;       
+    height: 30vw;       
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    float: left;        
+    margin-right: 20px; 
+    margin-top: 2vw;   
+  }
+  
 #center-picture {
     height: auto;
     display: flex;
     justify-content: center;
-}
+  }
 
 #additional-info {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-#info-heading {
-    margin-top: 20px;
-}
+@media (max-width: 768px) {
+    .top-corner {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #additional-info {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .info-image {
+      max-width: 200px;
+    }
+  }  
