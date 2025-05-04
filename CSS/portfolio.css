@@ -81,7 +81,9 @@ footer {
 }
 
 #center-picture {
+  max-width: 100%;
   height: auto;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
