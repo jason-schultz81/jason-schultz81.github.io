@@ -15,42 +15,51 @@
 </head>
 
 <body>
-  <header>
-    <section id="section-1">
-      <img src="Deacon_shoots-1a.jpg" class="profile-image" id="headshot" alt="profile picture">
-      <div class="top-corner">
-        <h1>Jason A. Schultz</h1>
-        <h2>IT Professional</h2>
-        <a href="https://www.linkedin.com/in/jasonanthonyschultz/">My LinkedIn</a>
+  <header class="bg-light border-bottom py-3">
+    <div class="container">
+      <div id="section-1" class="row align-items-center">
+        <div class="col-md-auto text-center text-md-start">
+          <img src="headshot.jpg" class="img-fluid rounded-circle headshot" alt="profile picture">
+        </div>
+        <div class="col text-center text-md-end mt-3 mt-md-0">
+          <h1 class="h3 mb-1">Jason A. Schultz</h1>
+          <h2 class="h5 mb-2">IT Professional</h2>
+          <a href="https://www.linkedin.com/in/jasonanthonyschultz/">My LinkedIn</a>
+        </div>
       </div>
-    </section>
+    </div>
   </header>
   <main>
     <div class="container" id="center-picture">
-      <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="chicago-skyline-at-night.jpg" class="img-fluid"
-        alt="The Chicago skyline at night and all of the lights are blue, reflecting an upside down mirror of the skyline onto Lake Michigan."></a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="chicago-skyline-at-night.jpg"
+          class="img-fluid"
+          alt="The Chicago skyline at night and all of the lights are blue, reflecting an upside down mirror of the skyline onto Lake Michigan."></a>
     </div>
-    <section class="featured-work">
-      <h1>Featured Work</h1>
-      <div id="additional-info">
-        <div id="about" class="info left">
-          <img src="blue-semiconductor.jpg" class="info-image"
-            alt="CPU glowing blue with numbers coming out of it towards you inside computer hardware"
-            data-bs-toggle="modal" data-bs-target=".about-modal">
-          <h3 class="info-heading">About</h3>
+    <div class="container">
+      <section class="featured-work">
+        <h1>Featured Work</h1>
+        <div id="additional-info">
+          <div id="about" class="info left">
+            <img src="blue-semiconductor.jpg" class="info-image"
+              alt="CPU glowing blue with numbers coming out of it towards you inside computer hardware"
+              data-bs-toggle="modal" data-bs-target=".about-modal">
+            <h3 class="info-heading">About</h3>
+          </div>
+          <div id="project-1" class="info right">
+            <img src="blue-semiconductor.jpg" class="info-image"
+              alt="CPU glowing blue with numbers coming out of it towards you inside computer hardware"
+              data-bs-toggle="modal" data-bs-target=".project_one-modal">
+            <h3 class="info-heading text-uppercase">Project 1</h3>
+            <p><a href="https://github.com/jason-schultz81/Personal_Portfolio_Website.git">Portfolio Website</a></p>
+          </div>
         </div>
-        <div id="project-1" class="info right">
-          <img src="blue-semiconductor.jpg" class="info-image"
-            alt="CPU glowing blue with numbers coming out of it towards you inside computer hardware"
-            data-bs-toggle="modal" data-bs-target=".project_one-modal">
-          <h3 class="info-heading text-uppercase">Project 1</h3>
-          <p><a href="https://github.com/jason-schultz81/Personal_Portfolio_Website.git">Portfolio Website</a></p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer>
-    <a href="https://www.linkedin.com/in/jasonanthonyschultz/">Made by Jason A. Schultz</a>
+    <div class="container text-center">
+      <a href="https://www.linkedin.com/in/jasonanthonyschultz/">Made by Jason A. Schultz</a>
+    </div>
   </footer>
   <!--About Modal-->
   <div class="modal fade about-modal" tabindex="-1" role="dialog" aria-labelledby="aboutModal" aria-hidden="true">
@@ -61,7 +70,8 @@
         </div> <!--modal header-->
         <div class="modal-body">
           <p>
-            Hi, my name is Jason Schultz. I am an entry-level IT professional and I am working a front-end web developer certificate.
+            Hi, my name is Jason Schultz. I am an entry-level IT professional and I am working a front-end web developer
+            certificate.
           </p>
           <p>
             If you want to contact me, you can <a href="mailto:jason.a.schultz81@gmail.com">email me</a>.
